@@ -11,6 +11,11 @@ $config = [
         '@bower' => '@vendor/bower-asset',
         '@npm'   => '@vendor/npm-asset',
     ],
+	'modules' => [
+		'admin' => [
+			'class'=>'app\modules\admin\AdminModule'
+		]
+	],
     'components' => [
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
@@ -43,14 +48,15 @@ $config = [
             ],
         ],
         'db' => $db,
-        /*
+        
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
+			'suffix' => '.html',
             'rules' => [
             ],
         ],
-        */
+        
     ],
     'params' => $params,
 ];
