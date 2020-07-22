@@ -17,6 +17,7 @@ class IndexController extends Controller
 	}
 	
 	public function actionMember($message = '卧槽') {
+		$this->layout = false;
 		return $this->render('member');
 		
 	}
