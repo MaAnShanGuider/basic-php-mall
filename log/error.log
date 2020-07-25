@@ -7,3 +7,16 @@
 2020/07/20 17:25:42 [error] 5158#0: *48 connect() failed (111: Connection refused) while connecting to upstream, client: 192.168.10.1, server: www.wy-yii2-demo2.com, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "www.wy-yii2-demo2.com"
 2020/07/20 17:25:42 [error] 5326#0: *52 connect() failed (111: Connection refused) while connecting to upstream, client: 192.168.10.1, server: www.wy-yii2-demo2.com, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "www.wy-yii2-demo2.com"
 2020/07/21 09:11:27 [error] 4464#0: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 192.168.10.1, server: www.wy-yii2-demo2.com, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "www.wy-yii2-demo2.com"
+2020/07/23 09:45:27 [error] 4482#0: *9 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent in /vagrant/wy-yii2-demo2/controllers/BaseController.php on line 21. in /vagrant/wy-yii2-demo2/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /vagrant/wy-yii2-demo2/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /vagrant/wy-yii2-demo2/vendor/yiisoft/yii2/web/ErrorHandler.php(136): yii\web\Response->send()
+#2 /vagrant/wy-yii2-demo2/vendor/yiisoft/yii2/base/ErrorHandler.php(135): yii\web\ErrorHandler->renderException(Object(Error))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(Error))
+#4 {main}
+Previous exception:
+Error: Call to a member function validateCsrfToken() on string in /vagrant/wy-yii2-demo2/vendor/yiisoft/yii2/web/Controller.php:203
+Stack trace:
+#0 /vagrant/wy-yii2-demo2/controllers/BaseController.php(22): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 /vagrant/wy-yii2-demo2/vendor/yiisoft/yii2/b" while reading upstream, client: 192.168.10.1, server: www.wy-yii2-demo2.com, request: "GET /login/index.html HTTP/1.1", upstream: "fastcgi://unix:/usr/local/php/var/run/php-fpm.sock:", host: "www.wy-yii2-demo2.com"

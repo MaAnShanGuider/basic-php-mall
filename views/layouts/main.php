@@ -23,8 +23,12 @@ AppAsset::register($this);
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
 </head>
-<body>
+<script src="js/common/index.js?v=2"></script>
 <?php $this->beginBody() ?>
+
+<?php $this->endBody() ?>
+
+<body>
 
 <div class="wrap">
     <?php
@@ -75,7 +79,6 @@ AppAsset::register($this);
     </div>
 </footer>
 
-<?php $this->endBody() ?>
 </body>
 </html>
 <?php $this->endPage() ?>

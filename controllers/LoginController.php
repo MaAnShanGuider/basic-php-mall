@@ -20,7 +20,7 @@ class LoginController extends BaseController
 				echo json_encode(array('status' => 0, 'msg' => '验证码错误'));
 				exit;
 			}
-			LoginService::service()->logIn($data);
+//			LoginService::service()->logIn($data);
 		}
 		return $this->render('index');
 	}
