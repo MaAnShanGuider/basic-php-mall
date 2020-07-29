@@ -5,6 +5,7 @@
 /* @var $model app\models\LoginForm */
 
 use yii\helpers\Html;
+use yii\jui\DatePicker;
 use yii\bootstrap\ActiveForm;
 
 $this->title = 'Login';
@@ -29,6 +30,11 @@ $this->title = 'Login';
 		</div>
 		<input type="text">
 	</main>
+	<?= DatePicker::widget([
+		'name' => 'date',
+		'language' => 'zh-CN',
+		'dateFormat' => 'php:Y-m-d',
+	]) ?>
 </section>
 </body>
 </html>
